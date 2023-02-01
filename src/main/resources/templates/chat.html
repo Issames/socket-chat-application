@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/sheet.css" />
+</head>
+<body>
+<div id="main">
+    <div id="login" class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <form id="userForm">
+        <h3>GO To Chat</h3>
+
+          <label for="username">Username</label>
+        <input type="text" placeholder="User Name" id="username">
+
+        <button>Log In</button>
+      </form>
+    </div>
+    <div id="chat" class="chat_window dis">
+        <div class="top_menu">
+          <div class="buttons">
+            <div class="button close">
+            </div>
+            <div class="button minimize"></div>
+            <div class="button maximize"></div>
+          </div>
+          <div class="title">Chat</div>
+        </div>
+        <div class="connecting" id="connect">Connecting...</div>
+        <ul class="messages" id="main-chat">
+          <!--
+            <li>
+              <hr>
+                <li class="status">Ahmed Join</li>
+              <hr>
+          </li>
+          <li class="sms">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+            <span class="my-message"><span class="user">Ahmed</span><span class="mes">HI</span></span>
+          </li>
+          -->
+        </ul>
+        <div class="bottom_wrapper clearfix"><div class="message_input_wrapper">
+          <input id="sms" class="message_input" placeholder="Type your message here..." /></div>
+          <div class="send_message">
+            <div class="icon">
+            </div><div id="sendDiv" class="text">Send</div>
+          </div>
+        </div>
+      </div>
+    <div id="test"></div>
+</div>
+
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>
